@@ -110,7 +110,7 @@ if page == "Home":
                     border:1px solid rgba(99,102,241,0.3);border-radius:20px;padding:60px 40px;max-width:600px;
                     backdrop-filter:blur(10px);box-shadow:0 8px 32px rgba(0,0,0,0.3);'>
             <h1 style='font-size:3.5rem;font-weight:700;margin-bottom:20px;
-                       color:#ec4899; /* สีสำรองทึบ */
+                       color:#ec4899; /* สีสำรองทึบ (ชมพู) */
                        background:linear-gradient(135deg,#6366f1,#ec4899);
                        -webkit-background-clip:text;
                        -webkit-text-fill-color:transparent;'>
@@ -141,15 +141,11 @@ elif page == "Chat":
     <div style='background:linear-gradient(135deg, rgba(99,102,241,0.1), rgba(236,72,153,0.1));
                  border-bottom:1px solid rgba(99,102,241,0.3);padding:30px 20px;border-radius:16px;
                  margin-bottom:30px;backdrop-filter:blur(10px);'>
-        <h1 style='font-size:2.5rem;margin:0;
-                   color:#ec4899; /* สีสำรองทึบ */
-                   background:linear-gradient(135deg,#6366f1,#ec4899);
-                   -webkit-background-clip:text;
-                   -webkit-text-fill-color:transparent;'>
-            💬 Multimodal Chatbot
-        </h1>
-    </div>
     """, unsafe_allow_html=True)
+    # **ใช้ st.markdown ที่แยกสีแทนการใช้ Gradient ที่มีปัญหา**
+    st.markdown(f"<h1 style='font-size:2.5rem;margin:0;'><span style='color:#6366f1;'>💬 Multimodal</span> <span style='color:#ec4899;'>Chatbot</span></h1>", unsafe_allow_html=True)
+    st.markdown("</div>", unsafe_allow_html=True)
+
 
     col1, col2, col3 = st.columns([0.75, 0.125, 0.125])
     with col1:
@@ -272,15 +268,10 @@ elif page == "Generate Image":
     <div style='background:linear-gradient(135deg, rgba(99,102,241,0.1), rgba(236,72,153,0.1));
                  border-bottom:1px solid rgba(99,102,241,0.3);padding:30px 20px;border-radius:16px;
                  margin-bottom:30px;backdrop-filter:blur(10px);'>
-        <h1 style='font-size:2.5rem;margin:0;
-                   color:#ec4899; /* สีสำรองทึบ */
-                   background:linear-gradient(135deg,#6366f1,#ec4899);
-                   -webkit-background-clip:text;
-                   -webkit-text-fill-color:transparent;'>
-            🎨 Generate Image
-        </h1>
-    </div>
     """, unsafe_allow_html=True)
+    # **ใช้ st.markdown ที่แยกสีแทนการใช้ Gradient ที่มีปัญหา**
+    st.markdown(f"<h1 style='font-size:2.5rem;margin:0;'><span style='color:#6366f1;'>🎨 Generate</span> <span style='color:#ec4899;'>Image</span></h1>", unsafe_allow_html=True)
+    st.markdown("</div>", unsafe_allow_html=True)
 
     prompt = st.text_input("_", placeholder="พิมพ์ prompt เพื่อสร้างรูปภาพ (English Only)", label_visibility="collapsed")
     generate_btn = st.button(" Generate Image", use_container_width=True)
