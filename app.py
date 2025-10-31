@@ -107,11 +107,14 @@ if page == "Home":
     st.markdown("""
     <div style='display:flex;justify-content:center;align-items:center;min-height:80vh; flex-direction:column;'>
         <div style='text-align:center;background:linear-gradient(135deg, rgba(99,102,241,0.1), rgba(236,72,153,0.1));
-                     border:1px solid rgba(99,102,241,0.3);border-radius:20px;padding:60px 40px;max-width:600px;
-                     backdrop-filter:blur(10px);box-shadow:0 8px 32px rgba(0,0,0,0.3);'>
-            <h1 style='font-size:3.5rem;font-weight:700;background:linear-gradient(135deg,#6366f1,#ec4899);
-                        -webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:20px;'>
-                                Welcome
+                    border:1px solid rgba(99,102,241,0.3);border-radius:20px;padding:60px 40px;max-width:600px;
+                    backdrop-filter:blur(10px);box-shadow:0 8px 32px rgba(0,0,0,0.3);'>
+            <h1 style='font-size:3.5rem;font-weight:700;margin-bottom:20px;
+                       color:#ec4899; /* สีสำรองทึบ */
+                       background:linear-gradient(135deg,#6366f1,#ec4899);
+                       -webkit-background-clip:text;
+                       -webkit-text-fill-color:transparent;'>
+                Welcome
             </h1>
             <p style='font-size:1.2rem;color:#cbd5e1;margin:20px 0;line-height:1.6;'>
                 ยินดีต้อนรับสู่ LLM Multimode
@@ -136,11 +139,13 @@ if page == "Home":
 elif page == "Chat":
     st.markdown("""
     <div style='background:linear-gradient(135deg, rgba(99,102,241,0.1), rgba(236,72,153,0.1));
-                    border-bottom:1px solid rgba(99,102,241,0.3);padding:30px 20px;border-radius:16px;
-                    margin-bottom:30px;backdrop-filter:blur(10px);'>
-        <h1 style='color:#f1f5f9;font-size:2.5rem;margin:0;
-                        background:linear-gradient(135deg,#6366f1,#ec4899);
-                        -webkit-background-clip:text;-webkit-text-fill-color:transparent;'>
+                 border-bottom:1px solid rgba(99,102,241,0.3);padding:30px 20px;border-radius:16px;
+                 margin-bottom:30px;backdrop-filter:blur(10px);'>
+        <h1 style='font-size:2.5rem;margin:0;
+                   color:#ec4899; /* สีสำรองทึบ */
+                   background:linear-gradient(135deg,#6366f1,#ec4899);
+                   -webkit-background-clip:text;
+                   -webkit-text-fill-color:transparent;'>
             💬 Multimodal Chatbot
         </h1>
     </div>
@@ -185,8 +190,8 @@ elif page == "Chat":
                 st.markdown(f"""
                 <div style='display:flex;justify-content:flex-end;margin:15px 0;'>
                     <div style='background:linear-gradient(135deg, rgba(99,102,241,0.3), rgba(99,102,241,0.2));
-                                 border-left:3px solid #6366f1;color:#f1f5f9;padding:14px 18px;border-radius:14px;
-                                 max-width:70%;word-wrap:break-word;box-shadow:0 4px 15px rgba(99,102,241,0.2);'>
+                                border-left:3px solid #6366f1;color:#f1f5f9;padding:14px 18px;border-radius:14px;
+                                max-width:70%;word-wrap:break-word;box-shadow:0 4px 15px rgba(99,102,241,0.2);'>
                         <b style='color:#a78bfa;'>{role}:</b> {content_display}
                     </div>
                 </div>
@@ -195,8 +200,8 @@ elif page == "Chat":
             st.markdown(f"""
             <div style='display:flex;justify-content:flex-start;margin:15px 0;'>
                 <div style='background:linear-gradient(135deg, rgba(236,72,153,0.15), rgba(99,102,241,0.1));
-                                 border-left:3px solid #ec4899;color:#f1f5f9;padding:14px 18px;border-radius:14px;
-                                 max-width:70%;word-wrap:break-word;box-shadow:0 4px 15px rgba(236,72,153,0.2);'>
+                                border-left:3px solid #ec4899;color:#f1f5f9;padding:14px 18px;border-radius:14px;
+                                max-width:70%;word-wrap:break-word;box-shadow:0 4px 15px rgba(236,72,153,0.2);'>
                     <b style='color:#f472b6;'>{role}:</b> {content_display}
                 </div>
             </div>
@@ -246,8 +251,8 @@ elif page == "Chat":
                     placeholder.markdown(f"""
                     <div style='display:flex;justify-content:flex-start;margin:15px 0;'>
                         <div style='background:linear-gradient(135deg, rgba(236,72,153,0.15), rgba(99,102,241,0.1));
-                                     border-left:3px solid #ec4899;color:#f1f5f9;padding:14px 18px;border-radius:14px;
-                                     max-width:70%;word-wrap:break-word;box-shadow:0 4px 15px rgba(236,72,153,0.2);'>
+                                        border-left:3px solid #ec4899;color:#f1f5f9;padding:14px 18px;border-radius:14px;
+                                        max-width:70%;word-wrap:break-word;box-shadow:0 4px 15px rgba(236,72,153,0.2);'>
                             <b style='color:#f472b6;'> Assistant:</b> {reply_text}
                         </div>
                     </div>
@@ -265,11 +270,13 @@ elif page == "Chat":
 elif page == "Generate Image":
     st.markdown("""
     <div style='background:linear-gradient(135deg, rgba(99,102,241,0.1), rgba(236,72,153,0.1));
-                    border-bottom:1px solid rgba(99,102,241,0.3);padding:30px 20px;border-radius:16px;
-                    margin-bottom:30px;backdrop-filter:blur(10px);'>
-        <h1 style='color:#f1f5f9;font-size:2.5rem;margin:0;
-                        background:linear-gradient(135deg,#6366f1,#ec4899);
-                        -webkit-background-clip:text;-webkit-text-fill-color:transparent;'>
+                 border-bottom:1px solid rgba(99,102,241,0.3);padding:30px 20px;border-radius:16px;
+                 margin-bottom:30px;backdrop-filter:blur(10px);'>
+        <h1 style='font-size:2.5rem;margin:0;
+                   color:#ec4899; /* สีสำรองทึบ */
+                   background:linear-gradient(135deg,#6366f1,#ec4899);
+                   -webkit-background-clip:text;
+                   -webkit-text-fill-color:transparent;'>
             🎨 Generate Image
         </h1>
     </div>
