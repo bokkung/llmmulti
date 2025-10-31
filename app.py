@@ -117,7 +117,7 @@ if page == "Home":
                 ยินดีต้อนรับสู่ LLM Multimode
             </p>
             <p style='font-size:1.2rem;color:#cbd5e1;margin:20px 0;line-height:1.6;'>
-                mini project นี้ถูกจัดทำตอนที่ผมกำลังฝึกงาน
+                mini project นี้ถูกจัดทำตอนที่ผมกำลังฝึกงานที่NECTEC
             </p>
             <div style="margin-top:20px; display:flex; justify-content:center; gap:20px;">
                 <a href="https://github.com/bokkung" target="_blank">
