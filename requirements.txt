@@ -1,15 +1,9 @@
-
 streamlit==1.27.0
-
-
-torch>=2.2.2,<2.3.0 
+torch>=2.2.2,<2.3.0
 transformers==4.39.0
 safetensors>=0.4.1
-huggingface_hub>=0.20.0 
-
+huggingface_hub>=0.20.0
 openai>=1.15.0
-
-
 Pillow>=9.5.0
 numpy>=1.26.4
 tqdm>=4.67.1
@@ -24,3 +18,4 @@ filelock>=3.8.0
 fsspec>=2025.9.0
 click>=8.0.0
 python-dateutil>=2.9.0
+diffusers>=0.19.1
