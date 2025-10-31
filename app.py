@@ -143,7 +143,7 @@ elif page == "Chat":
                  margin-bottom:30px;backdrop-filter:blur(10px);'>
     """, unsafe_allow_html=True)
     # **ใช้ st.markdown ที่แยกสีแทนการใช้ Gradient ที่มีปัญหา**
-    st.markdown(f"<h1 style='font-size:2.5rem;margin:0;'><span style='color:#6366f1;'>💬 Multimodal</span> <span style='color:#ec4899;'>Chatbot</span></h1>", unsafe_allow_html=True)
+    st.markdown(f"<h1 style='font-size:2.5rem;margin:0;'><span style='color:#6366f1;'>💬 Chat</span> <span style='color:#ec4899;'>bot</span></h1>", unsafe_allow_html=True)
     st.markdown("</div>", unsafe_allow_html=True)
 
 
