@@ -7,6 +7,7 @@ import json
 from datetime import datetime
 from diffusers import StableDiffusionPipeline
 import os
+os.environ["STREAMLIT_WATCHDOG"] = "false"
 
 st.set_page_config(
     page_title="LLM Multimode",
